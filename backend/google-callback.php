@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-header("Access-Control-Allow-Origin: http://localhost:3000");
+header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header("Access-Control-Allow-Credentials: true");
@@ -13,10 +13,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "color_picker_db";
+$host = "sql113.infinityfree.com"; // Your database host
+$username = "if0_40515800"; // Your database username
+$password = "EWEN202210750"; // Your database password
+$database = "if0_40515800_XXX"; // Your database name
 
 
 $conn = new mysqli($host, $username, $password, $database);
