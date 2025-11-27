@@ -361,8 +361,8 @@ function App() {
   const [showRegister, setShowRegister] = useState(false);
   const [checkingAuth, setCheckingAuth] = useState(true);
 
-  const API_URL = 'https://sarabia-colorpicker.free.nf/backend/api.php';
-  const AUTH_URL = 'https://sarabia-colorpicker.free.nf/backend/auth.php';
+  const API_URL = 'http://localhost/Sarabia-Finals/backend/api.php';
+  const AUTH_URL = 'http://localhost/Sarabia-Finals/backend/auth.php';
 
   useEffect(() => {
     checkAuth();

@@ -3,7 +3,7 @@ session_start();
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-    header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Origin: http://localhost:3000");
     header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
     header("Access-Control-Allow-Headers: Content-Type, Authorization");
     header("Access-Control-Allow-Credentials: true");
@@ -12,17 +12,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit();
 }
 
-header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Origin: http://localhost:3000");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header("Access-Control-Allow-Credentials: true");
 header("Content-Type: application/json");
 
 
-$host = "sql113.infinityfree.com"; // Your database host
-$username = "if0_40515800"; // Your database username
-$password = "EWEN202210750"; // Your database password
-$database = "if0_40515800_XXX"; // Your database name
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "color_picker_db";
 
 
 $conn = new mysqli($host, $username, $password, $database);
